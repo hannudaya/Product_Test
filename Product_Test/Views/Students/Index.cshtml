@@ -1,0 +1,16 @@
+﻿@model List<Product_Test.Models.Student>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+@foreach (var student in Model)
+{
+    <h1>@student.FirstName</h1>
+    <h1>@student.Lastname</h1>
+    <h1>@student.DOB</h1>
+    <h1>@student.Address</h1>
+    <h1>@student.Gender.GenderName</h1>
+    <h1>@student.PhoneNumber</h1>
+
+}
